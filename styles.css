@@ -1,0 +1,172 @@
+body{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(130deg, #153677, #4e085f);
+  box-sizing: border-box;
+}
+
+.todo-app{
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-app h2{
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-app h2 img{
+  width: 30px;
+  margin-left: 10px;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 15px 40px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: bolder;
+}
+
+label{
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  padding: 15px 40px 15px 30px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: bolder;
+}
+
+.row{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input{
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px 190px 10px 10px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#input-line{
+  padding-right: 30px;
+  width: 100%;
+}
+
+ul#list-container{
+  align-items: center;
+  border-radius: 10px;
+  padding-inline-start: 0;
+}
+
+ul#list-container > *{
+  background-color: #5c7ec4;
+  border-radius: 30px;
+  font-weight: bolder;
+  font-size: 16px;
+  color:#ffffff;
+  word-break: break-all;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  }
+
+.editing{
+  color: #ffffff;
+}
+
+li > *.checkbox{
+  margin: 20px;
+  padding: 20px;
+}
+
+.list-container{
+  display: list-item;
+  width: 100%;
+  }
+
+.task-item{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+#remove-task{
+  color: red;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  font-size: smaller;
+}
+
+#remove-task:hover{
+  background: #4a669e;
+  border-radius: 50%;
+}
+
+.task-functions{
+  display: flex;
+  justify-content: space-between;
+}
+
+.counters{
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-numbers{
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.page-numbers .page{
+  padding: 10px 15px;
+   
+}
+
+.active{
+  border: 5px solid #4a669e;
+}
+
+.editing::placeholder{
+  color: rgb(199, 180, 180)
+}
+
+select {
+  padding: 10px 0;
+  font-size: large;
+}

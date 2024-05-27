@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDo toDay</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="todo-app">
+      <h2>TodoJS List <img src="./icons/free-icon-notepad-8923781.png"></h1>
+      <section class="task-functions">
+        <label>
+          <input type="checkbox" class="checkbox" id="check-all-task">
+          Check all
+        </label>
+        <button class="delete-completed">Delete completed</button>
+      </section>
+      <div class="row">
+        <input id='input-line' placeholder="Add your text" maxlength="254">
+        <button id="add-task">Add</button>
+      </div>
+      <ul id="list-container"></ul>
+      <select name='counters' class="counters">
+        <option class="tabulation" value="all" id="all">All Tasks (0)</option>
+        <option class="tabulation" value="active" id="active">Active (0)</option>
+        <option class="tabulation" value="completed" id="completed">Completed (0)</option>
+      </select>
+      <section class="page-numbers"></section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
