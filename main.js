@@ -19,11 +19,13 @@
   let filterType = 'all';
   let activePage = 1;
 
-  const { _ } = window;
-
   const validatate = (text) => {
-    text = text.replace(/\s+/g, ' ');
-    text = _.escape(text);
+    text = text.replace(/\s+/g, ' ')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
     return text;
   };
 
